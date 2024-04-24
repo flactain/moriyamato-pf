@@ -57,7 +57,7 @@ function even(numbers) {
 
   <div>
     <h2>v-for list rendering</h2>
-    <li v-for="(item, index) in items">{{ index }} - {{ item.message }}</li>
+    <li v-for="(item, index) in items" :key="item.message">{{ index }} - {{ item.message }}</li>
   </div>
   <br /><br />
 
