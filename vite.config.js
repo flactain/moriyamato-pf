@@ -17,7 +17,7 @@ import VueDevTools from 'vite-plugin-vue-devtools'
 //   }
 // })
 export default defineConfig({
-  base: '/moriyamato-pf/',
+  // base: '/moriyamato-pf/',
   plugins: [vue(), VueDevTools()],
   resolve: {
     alias: {
