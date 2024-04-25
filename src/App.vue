@@ -84,7 +84,7 @@ function addList(title, limit) {
   margin-bottom: 30px;
 }
 .todo-content {
-  height: 450px;
+  height: 45vh;
 }
 .todo-input {
   margin: 5px;
