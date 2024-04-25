@@ -1,6 +1,10 @@
 <script setup>
+import { ref, onMounted } from 'vue'
 const props = defineProps({
   todo: Object
+})
+const visibilityStyle = ref({
+  visibility: props.todo.limit === '0000-00-00' ? 'hidden' : 'visible'
 })
 </script>
 
@@ -13,8 +17,10 @@ const props = defineProps({
     >
       削除
     </button>
-    <span class="col-7" style="margin: auto">{{ props.todo.title }}</span>
-    <span class="badge bg-primary mori-badge"> {{ props.todo.limit }}</span>
+    <span class="col-7" style="margin: auto; text-align: left">{{ props.todo.title }}</span>
+    <span class="badge bg-primary mori-badge" :style="visibilityStyle">
+      {{ props.todo.limit }}</span
+    >
   </div>
 </template>
 
