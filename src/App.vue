@@ -10,9 +10,19 @@ const todos = ref([
   { title: '夜熟睡する🌙', limit: '2024-04-20', done: false },
   { title: 'Vue.jsの神になる💘', limit: '2024-04-23', done: false },
   { title: '歯磨き🦷', limit: '2024-04-23', done: false },
-  { title: '佐野さんの家に行く', limit: '2024-04-23', done: false },
-  { title: 'クレカの支払い', limit: '2024-04-23', done: false },
-  { title: 'ご飯を食べる🍚', limit: '2024-04-15', done: false }
+  { title: '佐野さんの家に行く🏩', limit: '2024-04-23', done: false },
+  { title: 'クレカの支払い💰', limit: '2024-04-23', done: false },
+  { title: '絵を描く🖌', limit: '2024-04-15', done: false },
+  { title: 'AWSの勉強をする💻', limit: '2024-04-15', done: false },
+  { title: '映画を見に行く📺', limit: '2024-04-15', done: false },
+  { title: '風呂に入る🚿', limit: '2024-04-15', done: false },
+  { title: 'グループ同士の構図を作る👊', limit: '2024-04-15', done: false },
+  {
+    title: 'モダンな技術を取り入れる🤖',
+    limit: '2024-04-15',
+    done: false
+  },
+  { title: '映画を見に行く📺', limit: '2024-04-15', done: false }
 ])
 const doingTodo = computed(() => {
   return todos.value.filter((todo) => {
